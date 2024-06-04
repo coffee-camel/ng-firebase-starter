@@ -6,8 +6,7 @@ import { HeaderComponent } from '_@shared/components/header/header.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `<app-header></app-header><router-outlet></router-outlet>`,
 })
 export class AppComponent {
   title = 'NgFirebaseStarter';
