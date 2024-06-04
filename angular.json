@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "NgFirebaseStarter": {
+    "ng-firebase-starter": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "NgFirebaseStarter:build:production"
+              "buildTarget": "ng-firebase-starter:build:production"
             },
             "development": {
-              "buildTarget": "NgFirebaseStarter:build:development"
+              "buildTarget": "ng-firebase-starter:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "NgFirebaseStarter:build"
+            "buildTarget": "ng-firebase-starter:build"
           }
         },
         "test": {

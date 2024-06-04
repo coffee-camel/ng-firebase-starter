@@ -9,5 +9,5 @@ import { HeaderComponent } from '_@shared/components/header/header.component';
   template: `<app-header></app-header><router-outlet></router-outlet>`,
 })
 export class AppComponent {
-  title = 'NgFirebaseStarter';
+  title = 'ng-firebase-starter';
 }
