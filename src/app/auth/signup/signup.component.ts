@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -8,6 +8,7 @@ import {
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { AuthService } from '_@core/auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -23,7 +24,7 @@ import { MatInputModule } from '@angular/material/input';
   styleUrl: './signup.component.scss',
 })
 export class SignupComponent {
-  // authService: AuthService = inject(AuthService);
+  authService: AuthService = inject(AuthService);
 
   signUpForm: FormGroup;
 
@@ -36,6 +37,6 @@ export class SignupComponent {
 
   onSignUp() {
     const { email, password } = this.signUpForm.value;
-    // this.authService.signUpWithEmailPassword(email, passoword);
+    this.authService.signUpWithEmailPassword(email, password);
   }
 }

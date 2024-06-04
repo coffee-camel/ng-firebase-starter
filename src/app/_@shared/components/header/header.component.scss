@@ -1,3 +1,9 @@
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 span:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
